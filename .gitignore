@@ -1,0 +1,6 @@
+*.xcuserdata
+xcuserdata
+xcuserdata/*
+.idea
+.DS_Store
+
