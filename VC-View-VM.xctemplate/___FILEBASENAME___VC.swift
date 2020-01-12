@@ -8,11 +8,10 @@
 
 import UIKIT
 
-/*
-protocol ___FILEBASENAME___VCCoordinatorDelegate: AnyObject {
-  
-}
-*/
+// Delete if not required
+//protocol ___FILEBASENAME___VCCoordinatorDelegate: AnyObject {
+//
+//}
 
 protocol ___FILEBASENAME___ViewControllerDelegate: AnyObject {
 
@@ -30,7 +29,7 @@ class ___FILEBASENAME___VC: UIViewController {
     super.viewDidLoad()
     
     // View preparation
-    // view.addSubview(___FILEBASENAME___View)
+    view.addSubview(___FILEBASENAME___View)
     // ___FILEBASENAME___View.configure()
   }
   

@@ -6,7 +6,7 @@
 //
 
 
-import UIKIT
+import UIKit
 
 class ___FILEBASENAME___View: UIView {
 
