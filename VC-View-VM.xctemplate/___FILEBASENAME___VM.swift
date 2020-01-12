@@ -1,5 +1,5 @@
 //
-//  ___FILENAME___VM.swift
+//  ___FILEBASENAMEASIDENTIFIER___.swift
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //  Copyright (c) ___YEAR___. All rights reserved.
@@ -7,21 +7,22 @@
 
 import Foundation
 
-protocol ___FILEBASENAME___ViewModelDelegate: class {
-  
+protocol ___FILEBASENAMEASIDENTIFIER___Delegate: class {
+    
 }
 
-class ___FILEBASENAME___ViewModel {
-  
-  // MARK: - Properties
-  weak var delegate: ___FILEBASENAME___ViewModelDelegate?
+class ___FILEBASENAMEASIDENTIFIER___ {
+    
+    // MARK: - Properties
+    weak var delegate: ___FILEBASENAMEASIDENTIFIER___Delegate?
 }
 
 // MARK: - Methods
-extension ___FILEBASENAME___ViewModel {
-  
+extension ___FILEBASENAMEASIDENTIFIER___ {
+    
 }
 
-extension ___FILEBASENAME___ViewModel: ___FILEBASENAME___ViewControllerDelegate {
-  
+// ### Change VM in the type to VC
+extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Delegate {
+    
 }

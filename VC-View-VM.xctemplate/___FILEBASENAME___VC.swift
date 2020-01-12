@@ -1,52 +1,55 @@
 //
-//  ___FILENAME___VC.swift
+//  ___FILEBASENAMEASIDENTIFIER___.swift
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //  Copyright (c) ___YEAR___. All rights reserved.
 //
 
 
-import UIKIT
+import UIKit
 
-// Delete if not required
-//protocol ___FILEBASENAME___VCCoordinatorDelegate: AnyObject {
-//
-//}
-
-protocol ___FILEBASENAME___ViewControllerDelegate: AnyObject {
-
+protocol ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate: AnyObject {
+    
 }
 
-class ___FILEBASENAME___VC: UIViewController {
-  
-  // MARK: - Properties
-  // let ___FILEBASENAME___View = ___FILEBASENAME___View()
-  weak var coordinatorDelegate: ___FILEBASENAME___VCCoordinatorDelegate?
-  private var viewModel: ___FILEBASENAME___ViewControllerDelegate?
-  
-  // MARK: - Lifecycle
-  override func viewDidLoad() {
-    super.viewDidLoad()
+protocol ___FILEBASENAMEASIDENTIFIER___Delegate: AnyObject {
     
-    // View preparation
-    view.addSubview(___FILEBASENAME___View)
-    // ___FILEBASENAME___View.configure()
-  }
-  
-  // MARK: - Creation
-  static func create(coordinator: ___FILEBASENAME___VCCoordinatorDelegate, viewModel: ___FILEBASENAME___ViewControllerDelegate) -> ___FILEBASENAME___VC {
-    let viewController = ___FILEBASENAME___VC()
-    viewController.viewModel = viewModel
-    viewController.coordinatorDelegate = coordinator
+}
+
+class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     
-    return viewController
-  }
-  
-  // MARK: - Methods
-  
+    // MARK: - Properties
+    // ### Remove VC and change property name to be lower camel case
+    // let ___FILEBASENAMEASIDENTIFIER___View = ___FILEBASENAMEASIDENTIFIER___View()
+    weak var coordinatorDelegate: ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate?
+    private var viewModel: ___FILEBASENAMEASIDENTIFIER___Delegate?
+    
+    // MARK: - Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // View preparation
+        // ### Remove VC and change to lower camel case
+        // view.addSubview(___FILEBASENAMEASIDENTIFIER___View)
+        // ### Remove VC and change to lower camel case
+        // ___FILEBASENAMEASIDENTIFIER___View.configure()
+    }
+    
+    // MARK: - Creation
+    static func create(coordinator: ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate, viewModel: ___FILEBASENAMEASIDENTIFIER___Delegate) -> ___FILEBASENAMEASIDENTIFIER___ {
+        let viewController = ___FILEBASENAMEASIDENTIFIER___()
+        viewController.viewModel = viewModel
+        viewController.coordinatorDelegate = coordinator
+        
+        return viewController
+    }
+    
+    // MARK: - Methods
+    
 }
 
 // MARK: - Protocols
-extension ___FILEBASENAME___VC: ___FILEBASENAME___ViewModelDelegate {
-
+// ### Remove VC from the type
+extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___VMDelegate {
+    
 }
