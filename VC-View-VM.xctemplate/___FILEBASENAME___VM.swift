@@ -14,7 +14,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___Delegate: class {
 class ___FILEBASENAMEASIDENTIFIER___ {
     
     // MARK: - Properties
-    weak var delegate: ___FILEBASENAMEASIDENTIFIER___Delegate?
+    weak var viewController: ___FILEBASENAMEASIDENTIFIER___Delegate?
 }
 
 // MARK: - Methods
