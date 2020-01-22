@@ -31,6 +31,9 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
         // View preparation
         // ### Remove VC and change to lower camel case
         // view.addSubview(___FILEBASENAMEASIDENTIFIER___View)
+        // ### Set the background color to the same color that will
+        // ### be assigned to the added subview's background
+        view.backgroundColor = UIColor.white
         // ### Remove VC and change to lower camel case
         // ___FILEBASENAMEASIDENTIFIER___View.configure()
     }

@@ -24,7 +24,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
         
         guard let parentView = self.superview else { return }
         snp.makeConstraints { (make) in
-            make.edges.equalTo(parentView.snp.edges)
+            make.edges.equalTo(parentView.safeAreaLayoutGuide)
         }
         
     }
