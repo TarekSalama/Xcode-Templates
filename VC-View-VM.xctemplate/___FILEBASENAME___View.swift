@@ -10,15 +10,32 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: UIView {
     
-    // MARK: - Properties
+    // MARK:- View states
+    enum ViewState {
+      case mainState
+      case failureState
+    }
     
-    // MARK: - Main configuration
+    var viewState: ViewState = .sendButtonDisabledState {
+      willSet {
+        switch newValue {
+        case .mainState: setMainState()
+        case .failureState: setFailureState()
+        }
+      }
+    }
+    
+    // MARK:- UI Elements
+    
+    // MARK:- Strings
+    
+    // MARK:- Main configuration
     func configure() {
         setupConstraints()
         setBackgroundColor()
     }
     
-    // MARK: - View configuration
+    // MARK:- Constraints
     private func setupConstraints() {
         
         
@@ -29,7 +46,18 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
         
     }
     
+    // MARK:- Views configuration
+    
     private func setBackgroundColor() {
         backgroundColor = UIColor.white
+    }
+    
+    // MARK:- States
+    private func setMainState() {
+      
+    }
+    
+    private func setFailureState() {
+      
     }
 }

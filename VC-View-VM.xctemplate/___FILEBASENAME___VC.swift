@@ -18,13 +18,13 @@ protocol ___FILEBASENAMEASIDENTIFIER___Delegate: AnyObject {
 
 class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     
-    // MARK: - Properties
+    // MARK:- Properties
     // ### Remove VC and change property name to be lower camel case
     // let ___FILEBASENAMEASIDENTIFIER___View = ___FILEBASENAMEASIDENTIFIER___View()
     weak var coordinatorDelegate: ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate?
     private var viewModel: ___FILEBASENAMEASIDENTIFIER___Delegate?
     
-    // MARK: - Lifecycle
+    // MARK:- Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,10 +36,22 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
         view.backgroundColor = UIColor.white
         // ### Remove VC and change to lower camel case
         // ___FILEBASENAMEASIDENTIFIER___View.configure()
+        
+        // Button actions
+        
+        // Navigation bar configuration
+        
+        
     }
     
-    // MARK: - Creation
-    static func create(coordinator: ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate, viewModel: ___FILEBASENAMEASIDENTIFIER___Delegate) -> ___FILEBASENAMEASIDENTIFIER___ {
+    override func viewWillAppear() {
+        super.viewWillAppear(true)
+        
+        // Default view state
+    }
+    
+    // MARK:- Instantiate
+    static func instantiate(coordinator: ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate, viewModel: ___FILEBASENAMEASIDENTIFIER___Delegate) -> ___FILEBASENAMEASIDENTIFIER___ {
         let viewController = ___FILEBASENAMEASIDENTIFIER___()
         viewController.viewModel = viewModel
         viewController.coordinatorDelegate = coordinator
@@ -47,7 +59,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
         return viewController
     }
     
-    // MARK: - Methods
+    // MARK:- Methods
     
 }
 
