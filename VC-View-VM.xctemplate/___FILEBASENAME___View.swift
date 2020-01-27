@@ -16,7 +16,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
       case failureState
     }
     
-    var viewState: ViewState = .sendButtonDisabledState {
+    var viewState: ViewState = .mainState {
       willSet {
         switch newValue {
         case .mainState: setMainState()

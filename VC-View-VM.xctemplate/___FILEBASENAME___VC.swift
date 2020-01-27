@@ -44,7 +44,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
         
     }
     
-    override func viewWillAppear() {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
         // Default view state
