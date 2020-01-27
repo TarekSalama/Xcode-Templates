@@ -47,7 +47,6 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
     }
     
     // MARK:- Views configuration
-    
     private func setBackgroundColor() {
         backgroundColor = UIColor.white
     }
