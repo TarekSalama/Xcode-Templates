@@ -16,7 +16,7 @@ class ___FILEBASENAMEASIDENTIFIER___ {
     // MARK: - Properties
     weak var viewController: ___FILEBASENAMEASIDENTIFIER___Delegate?
 // ### Rename types to actual repo protocol type
-//    var repo: RepositoryProtocol!
+//    var repo: RepositoryProtocol
     
 //    init(repo: RepositoryProtocol) {
 //        self.repo = repo
