@@ -54,7 +54,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     static func instantiate(coordinator: ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate, viewModel: ___FILEBASENAMEASIDENTIFIER___Delegate) -> ___FILEBASENAMEASIDENTIFIER___ {
         let viewController = ___FILEBASENAMEASIDENTIFIER___()
         viewController.viewModel = viewModel
-        viewController.coordinatorDelegate = coordinator
+        viewController.coordinator = coordinator
         
         return viewController
     }
