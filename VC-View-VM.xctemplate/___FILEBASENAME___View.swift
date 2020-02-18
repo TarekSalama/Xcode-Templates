@@ -32,7 +32,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
     // MARK:- Main configuration
     func configure() {
         setupConstraints()
-        setBackgroundColor()
+        setupViews()
     }
     
     // MARK:- Constraints
@@ -47,7 +47,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
     }
     
     // MARK:- Views configuration
-    private func setBackgroundColor() {
+    private func setupViews() {
         backgroundColor = UIColor.white
     }
     
