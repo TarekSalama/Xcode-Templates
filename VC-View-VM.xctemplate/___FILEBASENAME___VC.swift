@@ -23,7 +23,9 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     // MARK:- Properties
     // ### Remove VC and change property name to be lower camel case
     // let ___FILEBASENAMEASIDENTIFIER___View = ___FILEBASENAMEASIDENTIFIER___View()
+    // Rename VC to View
     weak var coordinator: ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate?
+    // Rename VC to View
     private var viewModel: ___FILEBASENAMEASIDENTIFIER___Delegate?
     
     // MARK:- Lifecycle
