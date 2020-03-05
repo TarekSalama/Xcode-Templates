@@ -14,13 +14,13 @@ protocol ___FILEBASENAMEASIDENTIFIER___Delegate: class {
 class ___FILEBASENAMEASIDENTIFIER___ {
     
     // MARK: - Properties
-    weak var viewController: ___FILEBASENAMEASIDENTIFIER___Delegate?
-// ### Rename types to actual repo protocol type
-//    private var repo: RepositoryProtocol
+    weak var view: ___FILEBASENAMEASIDENTIFIER___Delegate?
+    // ### Rename types to actual repo protocol type
+    //    private var repo: RepositoryProtocol
     
-//    init(repo: RepositoryProtocol) {
-//        self.repo = repo
-//    }
+    //    init(repo: RepositoryProtocol) {
+    //        self.repo = repo
+    //    }
 }
 
 // MARK: - Methods
@@ -28,7 +28,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
     
 }
 
-// ### Change VM in the type to VC
+// ### Change VM in the type to View
 extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Delegate {
     
 }

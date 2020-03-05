@@ -8,10 +8,12 @@
 
 import UIKit
 
+// ### Change VC to View
 protocol ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate: AnyObject {
     
 }
 
+// ### Change VC to View
 protocol ___FILEBASENAMEASIDENTIFIER___Delegate: AnyObject {
     
 }

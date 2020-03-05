@@ -12,17 +12,17 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
     
     // MARK:- View states
     enum ViewState {
-      case mainState
-      case failureState
+        case mainState
+        case failureState
     }
     
     var viewState: ViewState = .mainState {
-      willSet {
-        switch newValue {
-        case .mainState: setMainState()
-        case .failureState: setFailureState()
+        willSet {
+            switch newValue {
+            case .mainState: setMainState()
+            case .failureState: setFailureState()
+            }
         }
-      }
     }
     
     // MARK:- UI Elements
@@ -53,10 +53,10 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
     
     // MARK:- States
     private func setMainState() {
-      
+        
     }
     
     private func setFailureState() {
-      
+        
     }
 }
